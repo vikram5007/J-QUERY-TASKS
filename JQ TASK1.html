@@ -3,6 +3,7 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,21 +37,32 @@
     <script>
         $(document).ready(function () {
 
-            $("button").click(function () {
+            $("#reg").click(function () {
                 $("#toggler").animate({
                     height: 'toggle',
                     width: 'toggle'
                 });
-            });
+            })
+
         });
+
+      
+    </script>
+
+    <script>
+          $(document).ready(function () {
+        $("#login").click(function(){
+            $("#container").toggle();
+        });
+    });
     </script>
 
 </head>
 
 <body>
     
-    <button> REGISTRATION FORM </button>
-    <button id="login_form">CLICK TO LOGIN </button>
+    <button id="reg"> REGISTRATION FORM </button>
+    
     <div style="height:800px;width:600px;position:absolute;margin-top: 30px;" id="toggler">
         <form action="RESPONSE.HTML" method="post">
             <fieldset>
@@ -107,8 +119,14 @@
             </fieldset>
         </form>
     </div>
-    <center> <h1> Student Login Form </h1> </center> 
-    <div class="container"> 
+
+
+
+     <h1 style="margin-left:800px;"> Student Login Form </h1> 
+
+
+    <button id="login" style="margin-left:700px; ">CLICK TO LOGIN </button>
+    <div style="height:800px;width:600px;position:absolute;margin-left: 650px;" id="container">
     <form>
        
             <label>Username : </label> 
@@ -121,7 +139,8 @@
             Forgot <a href="#"> password? </a> 
        
     </form>
-</div> 
+    </div>
+    
 
 </body>
 

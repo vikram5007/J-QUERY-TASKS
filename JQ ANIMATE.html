@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #text {
+
+            z-index: 1;
+            text-align: center;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #bg {
+            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            height: 1000px;
+            width: 1500px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#changer").click(function () {
+                $("#bg").animate({
+                    height: 'toggle',
+                    width: 'toggle'
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#changer2").click(function () {
+                $("#inner")
+                
+                    .animate({ left: '350px' }, "fast")
+                    .animate({ top: '350px' }, "fast")
+                    .animate({ width: '600px' }, "fast")
+                    .animate({ height: '100px' }, "fast")
+                    .animate({ fontSize: '20px' },"1000")
+                    .css({background:"black"},)
+            });
+        });
+
+        $(document).ready(function () {
+           $("#inner").hover(function(){
+            $(this).animate({height:"150px"},"slow")
+           },
+           function(){
+            $(this).animate({height:"100px"},"fast")
+        });
+    });
+
+
+
+
+
+
+    </script>
+</head>
+
+<body id>
+
+    <button id="changer">CLICK TO CHANGE </button>
+    <button id="changer2">CLICK TO CHANGE TEXT </button>
+    <div id="bg">
+        <div id="inner" style="background:#00343d00;position:absolute;border-radius: 15px;">
+            <h1 id="text"> CAPTAIN LEVI </h1>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
