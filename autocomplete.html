@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+    <title>Document</title>
+
+    <script>
+
+        $(function() {
+            var autocomp = [
+                "IPHONE11",
+                "IQOO7",
+                "VIVOV27",
+                "SAMSUNGS23ULTRA",
+                "IPHONE13PROMAX",
+                "IPHONE13",
+                "IPHONE3PRO",
+                "IPHONE13PLUS",
+                "ONEPLUS11",
+                "ONEPLUS10",
+                "ONEPLUS7PRO "
+            ];
+
+            $("#act").autocomplete
+                ({
+                    source:autocomp,
+                    autoFocus: true,
+                    minLength: 2,
+                    delay:1000,
+                });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1> AUTO COMPLETE OF THE INPUT FIELD </h1>
+    <div class = "ui-widget">
+    <label for="act">ENTER A MOBILE NAME : </label>
+    <input id="act">
+    </div>
+</body>
+
+</body>
+
+</html>

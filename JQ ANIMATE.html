@@ -19,7 +19,7 @@
         }
 
         #bg {
-            background-image: url("wallpaperflare.com_wallpaper.jpg");
+            background-image: url("assets/wallpaperflare.com_wallpaper.jpg");
             height: 1000px;
             width: 1500px;
         }
@@ -37,27 +37,24 @@
         $(document).ready(function () {
             $("#changer2").click(function () {
                 $("#inner")
-                
+
                     .animate({ left: '350px' }, "fast")
                     .animate({ top: '350px' }, "fast")
                     .animate({ width: '600px' }, "fast")
                     .animate({ height: '100px' }, "fast")
-                    .animate({ fontSize: '20px' },"1000")
-                    .css({background:"black"},)
+                    .animate({ fontSize: '20px' }, "1000")
+                    .css({ background: "black" },)
             });
         });
 
         $(document).ready(function () {
            $("#inner").hover(function(){
-            $(this).animate({height:"150px"},"slow")
+            $(this).animate({"padding":"50px"},"slow")
            },
            function(){
-            $(this).animate({height:"100px"},"fast")
+            $(this).animate({"padding":"25px"},"slow")
         });
     });
-
-
-
 
 
 

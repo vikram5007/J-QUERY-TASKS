@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/dark-hive/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+
+
+    <script>
+        $(document).ready(function(){
+             $("#tab1").accordion({
+                collapsible:true
+            });
+        });
+
+        $(document).ready(function(){
+             $("#tab2").accordion({
+                collapsible:true
+            });
+        });
+
+
+        $(document).ready(function(){
+            $("#APPEND").click(function(){
+                $("#MOB").append(" <img src=assets/pexels-adrienne-andersen-2351844.jpg height=400px width=400px>" );
+            });
+        });
+
+        $(document).ready(function(){
+            $("#PREPEND").click(function(){
+                $("#LAP").append(" <img src=assets/pexels-vincent-rivaud-2295287.jpg height=400px width=400px>" );
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+    <div id="tab1">
+        <h1> MOBILE TAB </h1>
+        <p ID="MOB">
+            <img src="assets/pexels-tracy-le-blanc-607812.jpg" height="400px" width="500px">
+            <img src="assets/pexels-tyler-lastovich-699122.jpg" height="400px" width="500px">
+            
+        </p>
+    </div>
+
+    <div id="tab2">
+        <h1> LAPTOP TAB </h1>
+        <p ID="LAP">
+            <img src="assets/pexels-andrew-neel-3201768.jpg" height="400px" width="500px">
+            <img src="assets/pexels-gantas-vaičiulėnas-3999538.jpg" height="400px" width="500px">
+            
+        </p>
+    </div>
+
+    <button id="APPEND"> CLICK TO APPEND A IMAGE</button>
+   <button id="PREPEND"> CLICK TO PREPEND A IMAGE</button>
+    
+</body>
+</html>
