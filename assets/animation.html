@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #next{
+            margin-left: 630px;
+            background-color: rgb(0, 170, 255);
+            border-radius: 10px;
+        }
+
+        #sun{
+            position: absolute;
+            top:50px;   
+            left:10px;  
+            filter: drop-shadow(-10px 0px 10px #000000)
+        }
+
+        #mer{
+            position: absolute;
+            top:180px;   
+            left:350px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #ven{
+            position: absolute;
+            top:170px;   
+            left:455px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #ear{
+            position: absolute;
+            top:155px;   
+            left:570px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #mars{
+            position: absolute;
+            top:180px;   
+            left:720px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #jupi{
+            position: absolute;
+            top:145px;   
+            left:820px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #sat{
+            position: absolute;
+            top:145px;   
+            left:990px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        #ura{
+            position: absolute;
+            top:145px;   
+            left:1150px;  
+            filter: drop-shadow(10px 0px 10px #000000)
+        }
+
+        
+     
+     
+    </style>
+
+    <script>
+        $(function(){
+            $("#next").click(function(){
+                var img=$("img");
+               $("#sun").animate({height:'400px',width:'400px',opacity:'1.0'},1000)
+               $("#mer").animate({height:'100px',width:'100px',opacity:'1.0'},2000)
+               $("#ven").animate({height:'120px',width:'120px',opacity:'1.0'},3000)
+               $("#ear").animate({height:'150px',width:'150px',opacity:'1.0'},4000)
+               $("#mars").animate({height:'90px',width:'90px',opacity:'1.0'},5000)
+               $("#jupi").animate({height:'180px',width:'180px',opacity:'1.0'},6000)
+               $("#sat").animate({height:'150px',width:'170px',opacity:'1.0'},7000)
+               $("#ura").animate({height:'150px',width:'150px',opacity:'1.0'},8000)
+            });
+        });
+
+
+    </script>
+</head>
+
+
+<body>
+    <h1 style="text-align:center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: italic; text-decoration: underline;"> THE SOLAR SYSTEM </h1>
+    <button id="next"> CLICK TO SHOW THE NEXT PLANET </button>
+
+    
+     <img src="pngwing.com.png" height="0px" width="0px" style="opacity:0.0;" id="sun">
+     <img src="toppng.com-mercury-planet-mercury-601x601.png" height="0px" width="0px" style="opacity:0.0;" id="mer">
+     <img src="pngegg.png" height="0px" width="0px" style="opacity:0.0;" id="ven">
+     <img src="earth.png" height="0px" width="0px" style="opacity:0.0;" id="ear">
+     <img src="mars.png" height="0px" width="0px" style="opacity:0.0;" id="mars">
+     <img src="jupi.png" height="0px" width="0px" style="opacity:0.0;" id="jupi">
+     <img src="sat.png" height="0px" width="0px" style="opacity:0.0;" id="sat">
+     <img src="ura.png" height="0px" width="0px" style="opacity:0.0;" id="ura">
+
+</body>
+
+</html>
